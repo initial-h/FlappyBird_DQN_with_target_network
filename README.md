@@ -25,8 +25,8 @@ pip install tensorflow
 pip install tflearn
 pip install opencv-python
 ```
-  pygame click here:　 [PyGame](https://blog.csdn.net/qq_33166080/article/details/68928563)
-  tensorflow gpu click here:　[Windows10 64位下安装TensorFlow - 官方原生GPU版安装](https://blog.csdn.net/goodshot/article/details/61926838)
+  pygame click here:[PyGame](https://blog.csdn.net/qq_33166080/article/details/68928563)
+  tensorflow gpu click here:[Windows10 64位下安装TensorFlow - 官方原生GPU版安装](https://blog.csdn.net/goodshot/article/details/61926838)
 
 ## How to Run
 * Play the game by yourself
