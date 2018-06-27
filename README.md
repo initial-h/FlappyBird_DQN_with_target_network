@@ -56,7 +56,7 @@ This algorithm is on paper [Human-level control through deep reinforcement learn
   * network
    <img src="images/network.png" width="450">
    
-  * game
+  * game  
   I cancel the FPS restriction when training so that it can run faster depending on your computer.
   
 
