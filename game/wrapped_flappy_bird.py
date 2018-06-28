@@ -127,6 +127,7 @@ class GameState:
             reward = -1
 
         # draw sprites
+        pygame.display.set_caption("score:"+str(self.score))#show real score in caption
         SCREEN.blit(IMAGES['background'], (0,0))
 
         for uPipe, lPipe in zip(self.upperPipes, self.lowerPipes):
