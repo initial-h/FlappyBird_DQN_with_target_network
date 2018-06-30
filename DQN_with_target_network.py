@@ -54,19 +54,22 @@ def createNetwork():
     return s, readout
 
 def plot_score(score_list):
-    plt.plot(np.arange(len(score_list)), score_list)
+    #plt.plot(np.arange(len(score_list)), score_list)
+    plt.semilogx(np.arange(len(score_list)), score_list)
     plt.ylabel('score')
     plt.xlabel('game')
     plt.show()
     
 def plot_cost(cost_list):
-    plt.plot(np.arange(len(cost_list)), cost_list)
+    #plt.plot(np.arange(len(cost_list)), cost_list)
+    plt.semilogx(np.arange(len(cost_list)), cost_list)
     plt.ylabel('Cost')
     plt.xlabel('training steps')
     plt.show()
     
 def plot_maxvalue(value_list):
-    plt.plot(np.arange(len(value_list)),value_list)
+    #plt.plot(np.arange(len(value_list)),value_list)
+    plt.semilogx(np.arange(len(value_list)),value_list)
     plt.ylabel('max_value')
     plt.xlabel('training step')
     plt.show()
