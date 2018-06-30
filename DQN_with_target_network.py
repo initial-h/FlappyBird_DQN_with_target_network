@@ -180,9 +180,9 @@ def trainNetwork(s,q_values,st,target_q_values,reset_target_network_params,sess,
                 readout_j1_batch = target_q_values.eval(feed_dict = {st : s_j1_batch})
                 #tensorflow还可以这样操作，这个eval可以转变BN吗，可以试试
                 for i in range(0, len(minibatch)):
-                    terminal = minibatch[i][4]
-                    # if terminal, only equals reward
-                    if terminal:
+                    terminal_ = minibatch[i][4]#this terminal_ should be different from terminal
+                    # if terminal_, only equals reward
+                    if terminal_:
                         y_batch.append(r_batch[i])
                     else:
                         y_batch.append(r_batch[i] + GAMMA * np.max(readout_j1_batch[i]))
