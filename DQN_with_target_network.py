@@ -242,9 +242,11 @@ def trainNetwork(s,q_values,st,target_q_values,reset_target_network_params,sess,
                 game_num+=1
                 score_list.append(score)
                 if time.time()-start_time>60:#don't print too frequently
-                    plot_cost(cost_list)
-                    plot_maxvalue(value_list)
-                    plot_score(score_list)
+                    #i run the code in spyder ipython console before, but if in terminal like CMD, it will pause when plot
+                    #so you can just comment the plot funtion
+                    #plot_cost(cost_list)
+                    #plot_maxvalue(value_list)
+                    #plot_score(score_list)
                     print('---------game:',game_num,state,'train_step:',t,'score:',score)
                     print('C is:',C,'mean cost:',np.mean(cost_tmp))
                     start_time = time.time()
